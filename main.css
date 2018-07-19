@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace; }
+
+body {
+  padding: 10px; }
+
+header {
+  height: auto;
+  padding: 20px;
+  color: #fff;
+  background: #a31aa3; }
+
+#map-canvas {
+  height: 400px; }
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  color: #fff;
+  font-weight: bold;
+  background: #c25ac2; }
+  button:hover {
+    background: #d870d8; }
+
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  margin-right: 10px; }
+
+.locLabel {
+  border-radius: 5px;
+  border: 1px solid #c83fc8;
+  padding: 8px; }

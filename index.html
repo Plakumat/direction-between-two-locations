@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Get a direction between two locations</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false "></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <span class="locLabel">Start Location:</span>
+            <select id="startPoint">
+                <option value="" disabled selected>-- Select your start location --</option>
+                <option value="besiktas">Beşiktaş</option>
+                <option value="fatih">Fatih</option>
+                <option value="gungoren">Güngören</option>
+                <option value="sisli">Şişli</option>
+                <option value="sariyer">Sarıyer</option>
+                <option value="bayrampasa">Bayrampaşa</option>
+                <option value="beykoz">Beykoz</option>
+                <option value="bakirkoy">Bakırköy</option>
+            </select>
+            <span class="locLabel">End Location:</span>
+            <select id="endPoint">
+                <option value="" disabled selected>-- Select your end location --</option>
+                <option value="bagcilar">Bağcılar</option>
+                <option value="catalca">Çatalca</option>
+                <option value="esenler">Esenler</option>
+                <option value="bahcelievler">Bahçelievler</option>
+                <option value="eyup">Eyüp</option>
+                <option value="beyoglu">Beyoğlu</option>
+                <option value="silivri">Silivri</option>
+                <option value="corlu">Çorlu</option>
+            </select>
+            <button id="send">Get Road</button>
+        </header>
+
+        <section>
+            <div id="map-canvas"></div>
+        </section>
+
+        <script src="polyline-conf.js"></script>
+        
+    </body>
+</html>

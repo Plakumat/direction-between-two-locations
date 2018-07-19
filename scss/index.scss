@@ -1,0 +1,53 @@
+$fmonos: monospace;
+$a: auto;
+$b1: #a31aa3;
+$b2: #c25ac2;
+$b3: #d870d8;
+$bor1: #c83fc8;
+$poi: pointer;
+$bo: bold;
+
+*{
+    margin:0;
+    padding:0;
+    font-family: $fmonos;
+}
+
+body {padding:10px}
+
+header{
+    height:$a;
+    padding: 20px;
+    color: #fff;
+    background: $b1;
+}
+
+#map-canvas{height:400px}
+
+button{
+    border-radius: 5px;
+    border:none;
+    padding:9px;
+    cursor: $poi;
+    transition-duration: 0.4s;
+    color: #fff;
+    font-weight: $bo;
+    background: $b2;
+    
+    &:hover{
+        background: $b3
+    }
+}
+
+select{
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.locLabel{
+    border-radius: 5px;
+    border: 1px solid $bor1;
+    padding: 8px;
+}
